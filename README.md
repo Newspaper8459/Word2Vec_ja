@@ -23,3 +23,10 @@ git clone https://github.com/Newspaper8459/Word2Vec_ja.git
 cd Word2Vec_ja && git lfs pull ja.bin
 ```
 
+4. Gensimで読み込みます
+```py
+from gensim.models import KeyedVectors
+
+model = KeyedVectors.load_word2vec_format('ja.bin', binary=True)
+```
+
